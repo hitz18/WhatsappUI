@@ -1,0 +1,1879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            $(".target").hide();
+            $(".target4").hide();
+            $(".target5").hide();
+            $("#hide").click(function() {
+                $(".target").hide( "slow" );
+                $(".target1").show( "slow" );
+
+            });
+
+            $("#hide1").click(function() {
+                $(".target1").hide( "slow" );
+                $(".target").show( "slow" );
+            });
+            $("#show").click(function() {
+                $(".target").show( "slow" );
+                $(".target1").hide( "slow" );
+            });
+
+            $("#home-tab").click(function() {
+                $(".target1").show( "slow" );
+                $(".target").hide( "slow" );
+            });
+
+$("#phonelog").click(function() {
+                $(".target4").show( "slow" );
+                $(".target3").hide( "slow" );
+                $(".target5").hide( "slow" );
+            });
+
+$("#contacts").click(function() {
+                $(".target5").show( "slow" );
+                $(".target3").hide( "slow" );
+                $(".target4").hide( "slow" );
+            });
+
+
+$(".hide3").click(function() {
+                $(".target3").show( "slow" );
+                $(".target4").hide( "slow" );
+                $(".target5").hide( "slow" );
+            });
+
+
+
+        });
+    </script>
+
+
+</head>
+
+<body class="bg-alert">
+
+
+    <div class="container-fluid d-none d-sm-none d-md-block  ">
+        <div class="row">
+            <div class=" col-5 border">
+
+                <div class="row border d-flex">
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-success width100 ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav width100 mr-auto">
+
+                                <li class="nav-item col-3">
+                                    <a class="nav-link" id="show" href="#"><img src="image.jpg" class=" rounded-circle" width="60" height="60"> </a>
+                                </li>
+
+                                <li class="nav-item active col-3">
+                                    <a class="nav-link" id="hide" href="#"><i class="fa fa-comments  fa-2x"></i></a>
+                                </li>
+
+
+
+                                <li class="nav-item col-2">
+                                    <a class="nav-link " href="#"><i class="fa fa-search  fa-2x"></i></a>
+                                </li>
+
+                                <li class="nav-item dropdown col-4">
+                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fas fa-ellipsis-v  fa-2x"></i>
+        </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" id ="contacts" href="#">Contacts</a>
+                                        <a class="dropdown-item" id ="phonelog" href="#">Call log</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                    <!--
+                      <div class=" align-self-center col-3 d-flex justify-content-end border "><button type="button" class="btn btn btn-outline-success rounded-circle" id = "hide"> <i class="fa fa-comments"></i></button> </div>
+
+                      <div class=" align-self-center col-3 d-flex justify-content-end "><button type="button" class="btn btn btn-outline-success rounded-circle " id = "show"> <img src="image.png" class=" rounded-circle" width="30" height="30"> </button></div>
+
+                      <div class=" align-self-center col-3 d-flex justify-content-end "><h5><i class="fa fa-search"></i></h5></div>
+                      
+                      <div class=" align-self-center col-3 d-flex justify-content-end "><div class="btn-group">
+  <button type="button" class="btn btn-outline-success  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fas fa-ellipsis-v"></i>
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+    <button class="dropdown-item" type="button">Action</button>
+    <button class="dropdown-item" type="button">Another action</button>
+    <button class="dropdown-item" type="button">Something else here</button>
+  </div>
+</div></div>
+                    -->
+                </div>
+
+
+
+                <!-- -->
+
+                <div class="row target chatlog border">
+
+                    <div class="col-xl-12 "><br> <img data-toggle="modal" data-target="#exampleModal" src="image.jpg" class=" rounded-circle mx-auto d-block" width="250px" height="250px"><br>
+                        <button type="button" class="btn btn-dark btn-lg btn-block text-white" data-toggle="tooltip" data-placement="right" title="Change Profile Pic"> 
+                     <i class="fa fa-camera "></i>
+                    </button>
+                    </div>
+
+                    <div class="col-xl-12 ">
+
+                        <br><br>
+                        <div class="row alert alert-dark" role="alert">
+
+                            <div class="col-xl-8 ">
+                                <h5>Hitesh Sharma</h5>
+                            </div>
+                            <div class="col-xl-4"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change User Name"><i class="fa fa-edit"></i></button></div>
+                        </div>
+
+                        <br><br> <br><br>
+                        <div class="row alert alert-dark" role="alert">
+
+                            <div class="col-xl-8 text-truncate">
+                                <h5>+911234567890</h5>
+                            </div>
+                            <div class="col-xl-4"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change Mobile No."><i class="fa fa-edit"></i></button></div>
+                        </div>
+
+                        <br><br>
+
+                        <div class="row alert alert-dark" role="alert">
+
+                            <div class="col-xl-8 text-truncate ">
+                                <h5>I love to code I love to code I love to code I love to code I love to code I love to code I love to code</h5>
+                            </div>
+                            <div class="col-xl-4"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change Status"><i class="fa fa-edit"></i></button></div>
+                        </div>
+
+
+                    </div>
+
+
+
+                    <br><br>
+
+                    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Profile Pic</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="image.jpg" class=" mx-auto d-block" width="100%" height="100%">
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+                </div>
+
+                <!-- -->
+
+<!-- -->
+
+                <div class="chatlog target1">
+
+
+                    <div class="row    contactmessage ">
+
+                        <div class="col-md-3 chat "><img src="wife.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>Wife</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>03:30 P.M </p>
+                                </div>
+                                <div class="col-md  ">
+                                    <p class="text-truncate">When are you comming home </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row    contactmessage ">
+
+                        <div class="col-md-3 chat "><img src="mom.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>MOM</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>02:00 P.M </p>
+                                </div>
+                                <div class="col-md  ">
+                                    <p class="text-truncate">Don't forget to bring sweets </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row  contactmessage ">
+                        <div class="col-md-3 chat "><img src="boss.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>Boss</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>Yesterday</p>
+                                </div>
+                                <div class="col-md ">
+                                    <p class="text-truncate">Presentation ASAP </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row  contactmessage ">
+                        <div class="col-md-3 chat "><img src="friendgroup.png" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>Friend Group</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>Yesterday <span class="badge badge-success">16</span></p>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <p class="text-truncate">Hi! are you going for the tour </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row  contactmessage ">
+                        <div class="col-md-3 chat "><img src="tangerines-1111529_1920.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>Brother</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>Wednesday</p>
+                                </div>
+                                <div class="col-md ">
+                                    <p class="text-truncate">Comming this sunday </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row  contactmessage ">
+                        <div class="col-md-3 chat "><img src="friend.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>Friend</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>17/05/2018 <span class="badge badge-success">5</span></p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p class="text-truncate">Sending you the mail </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row  contactmessage ">
+                        <div class="col-md-3 chat "><img src="dad.jpg" class=" rounded-circle" width="60" height="60"> </div>
+                        <div class="col-md-9">
+                            <div class="row ">
+                                <div class="col-md-6  messagecontact text-truncate">
+                                    <h5>DAD</h5>
+                                </div>
+                                <div class="col-md-6  ">
+                                    <p>17/05/2018</p>
+                                </div>
+                                <div class="col-md ">
+                                    <p class="text-truncate">Image</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+                <!-- -->
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+<div class=" col-7 chatbox target5 " role="alert">
+
+<div class="row border">
+
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-success width100 ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav width100 mr-auto">
+
+                                <li class="nav-item active col-2">
+                                    <a class="nav-link hide3" href="#">
+                                        <i class="fas fa-arrow-left fa-2x"></i>
+                                        
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item active col-10 align-items-right">
+                                    <a class="nav-link"  href="#">
+                                        <h3>Contacts</h3>
+                                        
+                                    </a>
+                                </li>
+
+                                
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+                </div>
+
+
+
+
+
+
+<div class="container-fluid chatlog  " role="alert">
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Ajay</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Anil</h5>
+                            <small>Urgent calls only</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Ankit</h5>
+                            <small>Be happy</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class="rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Chirag Gaur</h5>
+                            <small>At Mumbai</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="dad.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>DAD</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Friend</h5>
+                            <small>Selfie king</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Gautam Shah</h5>
+                            <small>Live life large....</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Jitesh Jangid</h5>
+                            <small>College Live </small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Kapil Sharma</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mom.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>MOM</h5>
+                            <small>home sweet home</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Naveen</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+                <div class=" chatbox col-7  target4">
+
+
+<div class="row border">
+
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-success width100 ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav width100 mr-auto">
+
+                                <li class="nav-item active col-2">
+                                    <a class="nav-link hide3" href="#">
+                                        <i class="fas fa-arrow-left fa-2x"></i>
+                                        
+                                    </a>
+                                </li>
+                                
+                                <li class="nav-item active col-10 align-items-right">
+                                    <a class="nav-link"  href="#">
+                                        <h3>Call Logs</h3>
+                                        
+                                    </a>
+                                </li>
+
+                                
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+                </div>
+
+
+
+
+                <div class="container-fluid chatlog  " role="alert">
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class="rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Friend</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 23 May 2018, 11:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="wife.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Wife</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 23 May 2018, 10:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mamaji.jpg" class="rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Mamaji</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 23 May 2018, 9:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="sister.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Sister</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 22 May 2018, 18:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="sister.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Sister</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 22 May 2018, 17:30</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mom.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Mom</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 21 May 2018, 16:05</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center "><img src="mom.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Mom</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 21 May 2018, 16:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="dad.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Dad</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 18 May 2018, 12:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Friend</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left red"></i> 16 May 2018, 14:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="wife.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Wife</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 15 May 2018, 20:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+</div>
+
+
+
+
+
+
+            <div class=" chatbox col-7 target3">
+
+                <div class="row border">
+
+                    <nav class="navbar navbar-expand-sm navbar-dark bg-success width100 ">
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav width100 mr-auto">
+
+                                <li class="nav-item col-3">
+                                    <a class="nav-link" id="show" href="#"><img src="wife.jpg" class=" rounded-circle" width="60" height="60"> </a>
+                                </li>
+
+                                <li class="nav-item active col-3">
+                                    <a class="nav-link" id="hide" href="#">
+                                        <h3>Wife</h3>
+                                        <p>Online</p>
+                                    </a>
+                                </li>
+
+
+
+
+                                <li class="nav-item col-2 ">
+                                    <i class="fa fa-phone white  fa-2x"></i>
+                                </li>
+
+                                <li class="nav-item col-2">
+                                    <i class="fa fa-video white  fa-2x"></i>
+                                </li>
+
+                                <li class="nav-item dropdown col-1">
+                                    <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <i class="fas fa-ellipsis-v  fa-2x"></i>
+        </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+
+                </div>
+
+
+
+                <!-- -->
+
+                <div class="row chatlog">
+
+
+                    <p class="col-8 friend message"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+                    <div class="col-4 chat"> </div>
+
+
+
+                    <div class="col-4 chat"> </div>
+                    <p class="col-8 me message"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. </p>
+
+
+
+                    <p class="col-8 friend message"> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries </p>
+                    <div class="col-4 chat"> </div>
+
+
+
+                    <p class="col-8 friend message"> but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages </p>
+                    <div class="col-4 chat"> </div>
+
+
+
+                    <p class="col-8 friend message"> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum </p>
+                    <div class="col-4 chat"> </div>
+
+
+                    <div class="col-4 chat"> </div>
+                    <p class="col-8 me message"> Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsumk </p>
+
+
+                    <p class="col-8 friend message">When are you comming home </p>
+                    <div class="col-4 chat"> </div>
+
+
+
+
+                </div>
+
+
+                <!-- -->
+
+
+            </div>
+
+
+
+
+
+            <div class="row fixed-bottom bg-success" style="padding: 5px;">
+                <div class="col-5 ">
+                    <h1> Whatsapp </h1>
+                </div>
+                <div class="col d-block "> <i class="fas fa-microphone-alt fa-2x"></i></div>
+                <div class="col d-block "> <i class="far fa-smile fa-2x"></i></div>
+                <div class="col-3 ">
+                    <form>
+                        <div class="form-group">
+
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="col-2">
+                    <button type="submit" class="btn btn-primary mb-2">Send</button>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container-fluid box d-block d-sm-block d-md-none d-lg-none">
+
+        <h5 class="alert alert-success" role="alert">Whatsapp</h5>
+
+        <!--                                                      Tab Pills                                                     -->
+        <ul class="nav nav nav-pills nav-fill " id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"><i class="fa fa-comments  fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">
+    <i class="fa fa-user-circle fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">
+    <i class="fa fa-address-book fa-2x"></i></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" id="calllog-tab" data-toggle="tab" href="#calllog" role="tab" aria-controls="calllog" aria-selected="false">
+    <i class="fa fa-phone fa-2x"></i></a>
+            </li>
+
+        </ul>
+
+
+        <!--                                                      Messages                                                     -->
+
+
+        <div class="tab-content" id="myTabContent">
+
+
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="container-fluid alert alert-warning chatbox width100 ">
+
+                    <div class="row no-gutter fixed-bottom target " style="background-color: #e3f2fd; ">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="input-group mb-3 col-9">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-microphone-alt "></i></button>
+                                <button class="btn btn-outline-secondary" type="button"><i class="fa fa-smile "></i></button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
+                        </div>
+
+
+
+                        <div class="col-1">
+                            <button type="submit" class="btn btn-outline-success mb-2"><i class="fas fa-arrow-alt-circle-up"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="chatlog target1">
+
+                        <div class="row    contactmessage ">
+                            <div class="col-3 chat "><img class=" rounded-circle d-block imagesize" width="60px" src="wife.jpg"> </div>
+                            <div class="col-9">
+                                <a id="hide1" href="#">
+                                    <div class="row ">
+                                        <div class="col-6  messagecontact text-truncate">
+                                            <h5>Wife</h5>
+                                        </div>
+                                        <div class="col-6  ">
+                                            <p>03:30 P.M</p>
+                                        </div>
+                                        <div class="col  ">
+                                            <p class="text-truncate">When are you comming home </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row    contactmessage ">
+                            <div class="col-3 chat "><img class=" rounded-circle d-block imagesize" width="60px" src="mom.jpg"> </div>
+                            <div class="col-9">
+                                <a id="hide1" href="#">
+                                    <div class="row ">
+                                        <div class="col-6  messagecontact text-truncate">
+                                            <h5>MOM</h5>
+                                        </div>
+                                        <div class="col-6  ">
+                                            <p>02:00 P.M</p>
+                                        </div>
+                                        <div class="col  ">
+                                            <p class="text-truncate"> Don't forget to bring sweets </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row    contactmessage ">
+                            <div class="col-3 chat "><img class=" rounded-circle d-block imagesize" width="60px" src="boss.jpg"> </div>
+                            <div class="col-9">
+
+                                <div class="row ">
+                                    <div class="col-6  messagecontact text-truncate">
+                                        <h5>Boss</h5>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <p>Yesterday</p>
+                                    </div>
+                                    <div class="col  ">
+                                        <p class="text-truncate"> Presentation ASAP </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="row    contactmessage ">
+                            <div class="col-3 chat "><img class=" rounded-circle d-block imagesize" width="60px" src="friendgroup.png"> </div>
+                            <div class="col-9">
+
+                                <div class="row ">
+                                    <div class="col-6  messagecontact text-truncate">
+                                        <h5>Friend Group</h5>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <p>Yesterday <span class="badge badge-success">16</span></p>
+                                    </div>
+                                    <div class="col  ">
+                                        <p class="text-truncate"> Hi! are you going for the tour </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="row  contactmessage ">
+                            <div class="col-3 chat "><img class=" rounded-circle d-block imagesize" width="60px" height="60px" src="tangerines-1111529_1920.jpg"> </div>
+                            <div class="col-9">
+                                <div class="row ">
+                                    <div class="col-6  messagecontact text-truncate">
+                                        <h5>Brother</h5>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <p>Wednesday</p>
+                                    </div>
+                                    <div class="col ">
+                                        <p class="text-truncate">Comming this sunday </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row  contactmessage ">
+                            <div class="col-3 chat "><img class="  rounded-circle d-block imagesize" width="60px" height="60px" src="friend.jpg"> </div>
+                            <div class="col-9">
+                                <div class="row ">
+                                    <div class="col-6  messagecontact text-truncate">
+                                        <h5>Friend</h5>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <p>17/05/2018 <span class="badge badge-success">5</span></p>
+                                    </div>
+                                    <div class="col- ">
+                                        <p class="text-truncate">Sending you the mail </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="row  contactmessage ">
+                            <div class="col-3 chat justify-content-start "><img class="  rounded-circle  imagesize" width="60px" height="60px" src="dad.jpg"> </div>
+                            <div class="col-9">
+                                <div class="row ">
+                                    <div class="col-6  messagecontact text-truncate">
+                                        <h5>DAD</h5>
+                                    </div>
+                                    <div class="col-6  ">
+                                        <p>17/05/2018</p>
+                                    </div>
+                                    <div class="col ">
+                                        <p class="text-truncate">Image</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row alert alert-warning target ">
+                        <div class="col-12 ">
+
+
+
+                        </div>
+
+                        <div class="col-12 chatlog ">
+
+
+
+                            <div class="chat row d-flex justify-content-start align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class=" friend message ">lkhklhlkhlkjlkjlkjlkjlkjlkjlkj Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                </div>
+                            </div>
+
+                            <div class="chat  row d-flex justify-content-end align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class="me message "> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                                </div>
+                            </div>
+
+                            <div class="chat row d-flex justify-content-start align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class=" friend  message "> when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
+                                </div>
+                            </div>
+
+
+                            <div class="chat row d-flex justify-content-start align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class="friend message "> but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages</p>
+                                </div>
+                            </div>
+
+
+                            <div class="chat row d-flex justify-content-start align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class=" friend message "> and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+                                </div>
+                            </div>
+
+                            <div class="chat  row d-flex justify-content-end align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class=" me message "> Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum</p>
+                                </div>
+                            </div>
+
+                            <div class="chat row d-flex justify-content-start align-items-center">
+                                <div class=" col-10 col-sm-8 col-lg-6">
+                                    <p class="friend message"> When are you comming home</p>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!--                                                      User Profile                                                     -->
+
+            <div class="tab-pane fade alert alert-warning" role="alert" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="container-fluid  chatbox chatlog width100">
+                    <div class="row  ">
+                        <div class="col-sm-4 "><br> <img src="image.jpg" class=" rounded-circle mx-auto d-block" width="200px" height="200px"><br>
+                            <button type="button" class="btn btn-dark btn-lg btn-block text-white" data-toggle="tooltip" data-placement="right" title="Change Profile Pic"> 
+                     <i class="fa fa-camera "></i>
+                    </button>
+                        </div>
+
+                        <div class="col-sm-6 ">
+
+                            <br><br>
+                            <div class="row alert alert-dark" role="alert">
+
+                                <div class="col-10 ">
+                                    <h5>Hitesh Sharma</h5>
+                                </div>
+                                <div class="col-2"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change User Name"><i class="fa fa-edit"></i></button></div>
+                            </div>
+
+                            <br><br> <br><br>
+                            <div class="row alert alert-dark" role="alert">
+
+                                <div class="col-10 ">
+                                    <h5>+911234567890</h5>
+                                </div>
+                                <div class="col-2"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change Mobile No."><i class="fa fa-edit"></i></button></div>
+                            </div>
+
+                            <br><br>
+
+
+
+                        </div>
+
+                    </div>
+
+                    <br><br>
+                    <div class="row alert alert-dark" role="alert">
+
+                        <div class="col-10 text-truncate ">
+                            <h5>I love to code I love to code I love to code I love to code I love to code I love to code I love to code</h5>
+                        </div>
+                        <div class="col-2"><button type="button" class="btn btn-dark" data-toggle="tooltip" data-placement="right" title="Change Status"><i class="fa fa-edit"></i></button></div>
+                    </div>
+                </div>
+            </div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Profile Pic</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="image.jpg" class=" mx-auto d-block" width="100%" height="!00%">
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+            <!--                                                      Call log (Audio/Video)                                                     -->
+
+
+                        <div class="tab-pane fade  " id="calllog" role="tabpanel" aria-labelledby="calllog-tab">
+
+
+
+                <div class="container-fluid chatlog alert alert-warning " role="alert">
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="wife.jpg" class=" rounded-circle" width="60px" height="60px"></div>
+                        <div class="col-8  ">
+                            <h5>Wife</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 23 May 2018, 11:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class=" rounded-circle" width="60px" height="60px"></div>
+                        <div class="col-8  ">
+                            <h5>Friend</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 23 May 2018, 10:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mamaji.jpg" class=" rounded-circle" width="60px" height="60px"></div>
+                        <div class="col-8  ">
+                            <h5>Mamaji</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 23 May 2018, 9:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="sister.jpg" class=" rounded-circle" width="60px" height="60px"></div>
+                        <div class="col-8  ">
+                            <h5>Sister</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 22 May 2018, 18:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="sister.jpg" class="rounded-circle" width="60px" height="60px"></div>
+                        <div class="col-8  ">
+                            <h5>Sister</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 22 May 2018, 17:30</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mom.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Mom</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 21 May 2018, 16:05</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center "><img src="mom.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Mom</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right red"></i> 21 May 2018, 16:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="dad.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Dad</h5>
+                            <small><i class="fa fa-arrow-alt-circle-right green"></i> 18 May 2018, 12:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Friend</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left red"></i> 16 May 2018, 14:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="wife.jpg" class=" rounded-circle" width="60" height="60"></div>
+                        <div class="col-8  ">
+                            <h5>Wife</h5>
+                            <small><i class="fa fa-arrow-alt-circle-left green"></i> 15 May 2018, 20:00</small>
+                        </div>
+                        <div class="col-2 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- Contacts -->
+
+
+
+            <div class="tab-pane fade  " id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+
+                <div class="container-fluid chatlog alert alert-warning " role="alert">
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Ajay</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Anil</h5>
+                            <small>Urgent calls only</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Ankit</h5>
+                            <small>Be happy</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class="rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Chirag Gaur</h5>
+                            <small>At Mumbai</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="dad.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>DAD</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="friend.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Friend</h5>
+                            <small>Selfie king</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Gautam Shah</h5>
+                            <small>Live life large....</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Jitesh Jangid</h5>
+                            <small>College Live </small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Kapil Sharma</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="mom.jpg" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>MOM</h5>
+                            <small>home sweet home</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="row borderdown ">
+                        <div class="col-2 d-flex justify-content-center align-items-center"><img src="me.png" class=" rounded-circle" width="40px" height="40px"></div>
+                        <div class="col-6  ">
+                            <h5>Naveen</h5>
+                            <small>Available</small>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-envelope green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-phone green"></i>
+
+                        </div>
+
+                        <div class="col-1 d-flex justify-content-center align-items-center  ">
+
+                            <i class="fa fa-video green"></i>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!--                                                                                                          -->
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</body>
+
+</html>
